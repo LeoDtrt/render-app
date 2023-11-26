@@ -13,7 +13,6 @@ register_page(__name__,
 # 1. INITIALISATION                                          #
 #------------------------------------------------------------#
 
-app = Dash(__name__)
 
 txt = []
 n = []

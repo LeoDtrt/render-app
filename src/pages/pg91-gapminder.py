@@ -4,7 +4,6 @@ import plotly.express as px
 
 
 register_page(__name__,
-    path='/',
     name='Gapminder Dataset'
 )
 

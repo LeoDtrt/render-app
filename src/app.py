@@ -1,6 +1,5 @@
 from dash import html, Dash, page_registry, page_container
 import dash_bootstrap_components as dbc
-import os
 
 app = Dash(__name__,
     use_pages=True,
@@ -15,7 +14,7 @@ sidebar = html.Div([
     dbc.Nav(
         children=[
             dbc.NavLink(
-                children=[html.Div(page["name"], className="ms-2")],
+                children=[html.Div(page["name"], className="ms-6")],
                 href=page["path"],
                 active="exact"
             )
@@ -27,8 +26,6 @@ sidebar = html.Div([
 
 
 content = html.Div([
-    html.H1("Dash : Project Structure"),
-    html.Hr(),
     html.Div([
         page_container
     ])
